@@ -1,0 +1,15 @@
+<h4>Reftreshing the page will make the error disapperar!</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note: this is a server error, not an angular error!!</p>
+    <ol>
+        <li>Next?Open chrome dev tools</li>
+        <li>Check network tab</li>
+        <li>Check api request</li>
+        <li>Reproduce in postman and see if yo uget the same error, if yes, angular is not to blame!</li>
+    </ol>
+    <p style="font-weight: bold;">Folowing is the stack trace - the first lines will be the solution!</p>
+    <code class="mt-5" style="color: rgba(236, 89, 4, 0.756); font-style: italic; font-weight: bold;">
+          {{error.details}}
+     </code>
+</ng-container>
