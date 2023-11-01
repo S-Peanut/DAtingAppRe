@@ -20,7 +20,8 @@
             </li>
         </ul>
         <div class="dropdown" *ngIf="(accountService.currentUser$| async) as user" dropdown>
-            <a class="dropdown-toggle text-light text-decoration-none" dropdownToggle>
+            <img src="{{user.photoUrl || './assets/user.png'}}" alt="user photo">
+            <a class="ms-2 dropdown-toggle text-light text-decoration-none" dropdownToggle>
                 <span class="welcome-banner-style">Welcome</span>
                 <span class="user-welcome-style">{{user.username}}</span>
             </a>
