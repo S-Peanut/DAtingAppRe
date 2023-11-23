@@ -22,7 +22,7 @@ export class MembersService {
     private http: HttpClient,
     private accountService: AccountService
   ) {
-    this.accountService.currentUser$.pipe(take(1)).subscribe({
+    this.accountService.currentUser$.subscribe({
       next: (user) => {
         if (user) {
           this.userParams = new UserParams(user);
@@ -48,8 +48,6 @@ export class MembersService {
   }
 
   getMembers(userParams: UserParams) {
-    console.log(Object.values(userParams).join('-'));
-
     const response = this.memberCache.get(Object.values(userParams).join('-'));
 
     if (response) return of(response);
@@ -138,5 +136,16 @@ export class MembersService {
 
   deletePhoto(photoId: number) {
     return this.http.delete(this.baseUrl + 'users/delete-photo/' + photoId);
+  }
+
+  addLike(username: string) {
+    return this.http.post(this.baseUrl + 'likes/' + username, {});
+  }
+
+  getLikes(predicate: string, pageNumber: number, pageSize: number) {
+    let params = this.getPaginationHeaders(pageNumber, pageSize);
+    params = params.append('predicate', predicate);
+
+    return this.getPaginatedResult<Member[]>(this.baseUrl + 'likes', params);
   }
 }
