@@ -42,7 +42,7 @@ import { DatePickerComponent } from './_forms/date-picker/date-picker.component'
     MemberEditComponent,
     PhotoEditorComponent,
     TextInputComponent,
-    DatePickerComponent
+    DatePickerComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,13 +51,13 @@ import { DatePickerComponent } from './_forms/date-picker/date-picker.component'
     BrowserAnimationsModule,
     FormsModule,
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [
-     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
-     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
-     {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true}
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
