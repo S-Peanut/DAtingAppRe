@@ -1,0 +1,51 @@
+.landing-slider {
+  position: relative;
+  carousel::ng-deep {
+    .carousel-indicators {
+      margin-bottom: 7.1em;
+    }
+    .carousel-inner > slide {
+      & img {
+        border-radius: 50px 0px 50px 0px;
+      }
+      .carousel-caption {
+        margin-bottom: 7.25em;
+      }
+    }
+  }
+  .register-controls-box {
+    position: absolute;
+    bottom: 3em;
+    width: 100%;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    z-index: 20;
+    width: 5%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      to right,
+      #1a0933d7,
+      #1a09335d 50%,
+      #eeeeee00 75%
+    );
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    z-index: 20;
+    width: 5%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(
+      to left,
+      #1a0933d7,
+      #1a09335d 50%,
+      #eeeeee00 75%
+    );
+  }
+}

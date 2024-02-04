@@ -19,7 +19,7 @@ import { Message } from 'src/app/_models/message';
   selector: 'app-member-detail',
   standalone: true,
   templateUrl: './member-detail.component.html',
-  styleUrls: ['./member-detail.component.css'],
+  styleUrls: ['./member-detail.component.scss'],
   imports: [
     CommonModule,
     TabsModule,

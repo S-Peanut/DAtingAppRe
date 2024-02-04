@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,MAAM,EAAE,cAAc;CACzB;;AAED,AAAA,KAAK,CAAA,AAAA,IAAC,CAAD,IAAC,AAAA,EAAW;EACb,KAAK,EAAE,WAAW;CACrB",
+    "sources": [
+        "photo-editor.component.scss"
+    ],
+    "names": [],
+    "file": "photo-editor.component.css"
+}

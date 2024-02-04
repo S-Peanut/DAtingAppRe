@@ -1,14 +1,20 @@
 .card:hover img {
-  transform: scale(1.2, 1.2);
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
   opacity: 0.7;
 }
 
 .card img {
-  transform: scale(1, 1);
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 .card-img-wrapper {
@@ -32,6 +38,7 @@
 }
 
 .animate {
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -48,7 +55,7 @@
   width: 12px;
   height: 12px;
   z-index: -1;
-  background-color: rgb(234, 57, 184);
+  background-color: #ea39b8;
   border-radius: 50%;
 }
 
@@ -62,3 +69,4 @@
   background-color: #1ba2f6;
   border-radius: 50%;
 }
+/*# sourceMappingURL=member-card.component.css.map */

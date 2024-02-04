@@ -1,80 +1,123 @@
 .dropdown-toggle,
 .dropdown-item {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 img {
-    max-height: 50px;
-    border: 2px solid white;
-    display: inline;
+  max-height: 50px;
+  border: 2px solid white;
+  display: inline;
 }
 
 .user-welcome-style {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    color: #fff;
-    padding: 0px 5px 0px 5px;
-    animation-name: user-open-slide;
-    animation-duration: 1.3s;
-    animation-delay: 1.5s;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  color: #fff;
+  padding: 0px 5px 0px 5px;
+  -webkit-animation-name: user-open-slide;
+          animation-name: user-open-slide;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .login-welcome-style {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: .2rem;
-    color: #fff;
-    padding: 0px 5px 0px 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  color: #fff;
+  padding: 0px 5px 0px 5px;
 }
 
 .login-welcome-style:hover,
 .user-welcome-style:hover {
-    border-radius: 5px;
-    font-weight: 900;
-    box-shadow: 0px 0px 10px 0px #fff;
-    background-color: #fff;
-    letter-spacing: .2rem;
-    transform: translateY(-2px);
-    color: rgb(23, 2, 41);
-    transition-duration: 0.8s;
+  border-radius: 5px;
+  font-weight: 900;
+  -webkit-box-shadow: 0px 0px 10px 0px #fff;
+          box-shadow: 0px 0px 10px 0px #fff;
+  background-color: #fff;
+  letter-spacing: .2rem;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  color: #170229;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 .welcome-banner-style {
-    display: inline-block;
-    padding: 0px 5px 0px 5px;
-    animation-name: banner-open-slide;
-    animation-timing-function: ease-out;
-    animation-duration: 1.5s;
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  -webkit-animation-name: banner-open-slide;
+          animation-name: banner-open-slide;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes banner-open-slide {
+  0% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+    color: #170229;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 @keyframes banner-open-slide {
-    0% {
-        transform: translateX(-300%);
-        color: rgb(23, 2, 41)
-    }
-    100% {
-        transform: translateX(0%);
-    }
+  0% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+    color: #170229;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes user-open-slide {
+  0% {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+  }
+  50% {
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: #ececec4c;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  100% {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+  }
 }
 
 @keyframes user-open-slide {
-    0% {
-        display: inline-block;
-        padding: 0px 5px 0px 5px;
-    }
-    50% {
-        border-radius: 10px;
-        font-weight: 900;
-        background-color: #ececec4c;
-        transform: translateY(-2px);
-    }
-    100% {
-        display: inline-block;
-        padding: 0px 5px 0px 5px;
-    }
+  0% {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+  }
+  50% {
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: #ececec4c;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  100% {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+  }
 }
+/*# sourceMappingURL=nav.component.css.map */

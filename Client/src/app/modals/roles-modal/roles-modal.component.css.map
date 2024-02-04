@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "roles-modal.component.scss"
+    ],
+    "names": [],
+    "file": "roles-modal.component.css"
+}

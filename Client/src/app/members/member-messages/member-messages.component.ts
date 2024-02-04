@@ -10,7 +10,7 @@ import { MessagesService } from 'src/app/_services/messages.service';
   standalone: true,
   templateUrl: './member-messages.component.html',
   imports: [CommonModule, TimeagoModule, FormsModule],
-  styleUrls: ['./member-messages.component.css'],
+  styleUrls: ['./member-messages.component.scss'],
 })
 export class MemberMessagesComponent implements OnInit {
   @ViewChild('messageForm') messageForm?: NgForm;

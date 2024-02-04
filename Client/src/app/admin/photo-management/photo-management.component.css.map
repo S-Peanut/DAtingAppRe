@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "photo-management.component.scss"
+    ],
+    "names": [],
+    "file": "photo-management.component.css"
+}
