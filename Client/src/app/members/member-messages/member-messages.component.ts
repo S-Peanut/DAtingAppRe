@@ -16,7 +16,7 @@ export class MemberMessagesComponent implements OnInit {
   @ViewChild('messageForm') messageForm?: NgForm;
   @Input() username?: string;
   messageContent = '';
-
+ 
   constructor(public messageService: MessagesService) {}
   ngOnInit(): void {}
 
