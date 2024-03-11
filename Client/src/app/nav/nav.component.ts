@@ -26,17 +26,8 @@ export class NavComponent implements OnInit {
   login() {
     this.accountService.login(this.model).subscribe({
       next: (_) => {
-        // const membersService = this.injector.get(MembersService);
-        // this.accountService.currentUser$.pipe(take(1)).subscribe({
-        //   next: (user) => {
-        //     if (user) {
-        //       membersService.userParams = new UserParams(user);
-        //       membersService.user = user;
-        //     }
-        //   },
-        // });
-
         this.router.navigateByUrl('/members');
+        this.model = {};
       },
     });
   }
@@ -46,3 +37,4 @@ export class NavComponent implements OnInit {
     this.router.navigateByUrl('/');
   }
 }
+      
