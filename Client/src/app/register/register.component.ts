@@ -10,6 +10,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
+import { validatePasswordStrength } from '../validators';
 
 @Component({
   selector: 'app-register',
@@ -28,6 +29,7 @@ export class RegisterComponent implements OnInit {
     private fb: FormBuilder,
     private router: Router
   ) {}
+
   ngOnInit(): void {
     this.initializeForm();
     this.maxDate.setFullYear(this.maxDate.getFullYear() - 18);
@@ -43,7 +45,12 @@ export class RegisterComponent implements OnInit {
       country: ['', Validators.required],
       password: [
         '',
-        [Validators.required, Validators.minLength(4), Validators.maxLength(8)],
+        [
+                Validators.required, 
+                Validators.minLength(8), 
+                Validators.maxLength(15), 
+                validatePasswordStrength()
+        ],
       ],
       confirmPassword: [
         '',

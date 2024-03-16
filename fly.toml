@@ -1,18 +1,18 @@
-# fly.toml app configuration file generated for datingappinitproj-polished-thunder-2790 on 2024-03-14T11:16:35+02:00
+# fly.toml app configuration file generated for datingappsp on 2024-03-14T15:06:04+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'datingappinitproj-polished-thunder-2790'
+app = 'datingappsp'
 primary_region = 'otp'
 
 [build]
   image = 'silvianp/datingapp:latest'
 
 [env]
-  ASPNETCORE_URLS="http://+:8080"
-  CloudinarySettings__CloudName="dsg7x1vg0"
-  CloudinarySettings__ApiKey="292961516881324"
+  ASPNETCORE_URLS = "http://+:8080"
+  CloudinarySettings__ApiKey = "292961516881324"
+  CloudinarySettings__CloudName = "dsg7x1vg0"
 
 [http_service]
   internal_port = 8080
